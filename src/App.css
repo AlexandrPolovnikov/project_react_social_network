@@ -1,0 +1,25 @@
+.icon-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 180px 10fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px);
+}
+
+.content {
+  display: grid;
+}
+
+.nav {
+  display: grid;
+  border: 8px solid #2f4f4f;
+  border-radius: 15px;
+  background-color: #2f4f4f;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  color: white;
+}

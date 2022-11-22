@@ -1,0 +1,41 @@
+.border {
+  width: auto;
+  height: 400px;
+  border: 1px solid blue;
+  display: block;
+}
+
+.fonscreen {
+  width: auto;
+  height: 200px;
+  background-image: url(https://img3.goodfon.ru/original/2048x1367/6/47/gory-ssha-osen-les-ozero.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #000;
+}
+.icon {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  margin-top: 125px;
+  background-image: url(https://schoolsw3.com/tryit/avatar.png);
+  background-size: cover;
+  border-radius: 80px;
+  background-position: center;
+}
+
+.info h1 {
+  margin: 20px;
+  margin-left: 170px;
+}
+
+.info h3 {
+  margin: 1px;
+}
+.myButton button {
+  margin-right: 150px;
+}
+.buttons {
+  margin-right: 10px;
+  text-align: end;
+}
