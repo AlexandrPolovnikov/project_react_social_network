@@ -3,7 +3,7 @@
 }
 
 .container {
-  border: 3px solid red;
+  border: 2px solid silver;
   height: 150px;
   margin: 5px;
   border-radius: 15px;
@@ -28,4 +28,5 @@
   margin: 5px;
   height: 80px;
   border-radius: 10px;
+  font-style: oblique;
 }

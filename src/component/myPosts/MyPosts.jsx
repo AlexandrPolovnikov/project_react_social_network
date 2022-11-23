@@ -8,7 +8,13 @@ const MyPosts = (props) => {
         <h3>User Name</h3>
       </div>
       <div className={style.post}>
-        <p>{props.message}</p>
+        <p>
+          {props.message}
+          <h3>
+            Мы стали забывать, что настоящее русское айти - это кодирование от
+            алкоголизма
+          </h3>
+        </p>
       </div>
     </div>
   );

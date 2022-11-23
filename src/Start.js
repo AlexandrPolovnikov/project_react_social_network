@@ -1,8 +1,11 @@
 import Technologies from "./component/header/Technologies";
 import "./App.css";
-import HomePage from "./component/main/HomePage";
-import Header from "./component/menu/Header";
+import { Header } from "./component/menu/Header";
+import { Route, Routes } from "react-router-dom";
+import Dialogs from "./component/dialogs/Dialogs";
 import MyPosts from "./component/myPosts/MyPosts";
+import HomePage from "./component/main/HomePage";
+import Error from "./component/error/Error";
 
 function App() {
   return (
@@ -17,14 +20,14 @@ function App() {
         <Header />
       </div>
       <div className="border">
-        <HomePage />
-        <MyPosts message="Мы" />
-        <MyPosts message="стали" />
-        <MyPosts message="забывать" />
-        <MyPosts message="что" />
-        <MyPosts message="настоящее" />
-        <MyPosts message="русское" />
-        <MyPosts message="айти" />
+        <Routes>
+          <Route path="/">
+            <Route index element={<HomePage />} />
+            <Route path="dialogs" element={<Dialogs />} />
+            <Route path="posts" element={<MyPosts />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
       </div>
     </div>
   );

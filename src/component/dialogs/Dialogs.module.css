@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+.tagname {
+  border: 1px solid #5a9c9c;
+  height: auto;
+}
+.chat {
+  border: 1px solid red;
+  height: auto;
+}

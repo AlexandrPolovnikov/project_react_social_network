@@ -1,29 +1,24 @@
 import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
 import style from "./Header.module.css";
 
-const Header = () => {
-  return (
+const Header = () => (
+  <>
     <div className={style.homeMenu}>
-      <a href="#s">
-        <h2>Home </h2>
-      </a>
-      <a href="#s">
-        <h2>New message </h2>
-      </a>
-      <a href="#s">
-        <h2>Feed </h2>
-      </a>
-      <a href="#s">
-        <h2>Music</h2>
-      </a>
-      <a href="#s">
-        <h2>Photo</h2>
-      </a>
-      <a href="#s">
-        <h2>Settings</h2>
-      </a>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/posts">Postsss</NavLink>
+        </li>
+        <li>
+          <NavLink to="/dialogs">Dialogs</NavLink>
+        </li>
+      </ul>
     </div>
-  );
-};
+    <Outlet />
+  </>
+);
 
-export default Header;
+export { Header };
