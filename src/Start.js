@@ -25,6 +25,7 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="dialogs" element={<Dialogs />} />
             <Route path="posts" element={<MyPosts />} />
+            <Route path="posts/:id" element={<MyPosts />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
