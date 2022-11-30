@@ -3,9 +3,13 @@ import "./App.css";
 import { Header } from "./component/menu/Header";
 import { Route, Routes } from "react-router-dom";
 import Dialogs from "./component/dialogs/Dialogs";
-import MyPosts from "./component/myPosts/MyPosts";
 import HomePage from "./component/main/HomePage";
 import Error from "./component/error/Error";
+import PostPage from "./component/myPosts/PostPage";
+import SinglePage from "./component/myPosts/SinglePage";
+import Chat1 from "./component/dialogs/chetList/Chat1";
+import Chat2 from "./component/dialogs/chetList/Chat2";
+import Chat3 from "./component/dialogs/chetList/Chat3";
 
 function App() {
   return (
@@ -23,9 +27,13 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<HomePage />} />
-            <Route path="dialogs" element={<Dialogs />} />
-            <Route path="posts" element={<MyPosts />} />
-            <Route path="posts/:id" element={<MyPosts />} />
+            <Route path="dialogs" element={<Dialogs />}>
+              <Route path="1" element={<Chat1 />} />
+              <Route path="2" element={<Chat2 />} />
+              <Route path="3" element={<Chat3 />} />
+            </Route>
+            <Route path="posts" element={<PostPage />} />
+            <Route path="posts/:id" element={<SinglePage />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
@@ -33,5 +41,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

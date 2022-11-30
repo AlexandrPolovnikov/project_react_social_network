@@ -1,9 +1,14 @@
+* {
+}
+
 .icon-img img {
   width: 100px;
   height: 100px;
 }
 
 .container {
+  padding-left: 10%;
+  padding-right: 10%;
   display: grid;
   grid-template-columns: 180px 10fr;
   grid-gap: 10px;
@@ -24,8 +29,7 @@
   color: white;
 }
 
-.border {
-  border: 1px solid #5a9c9c;
-  margin: 5px;
+/* .border {
+  border: 3px solid #5a9c9c;
   border-radius: 10px;
-}
+} */

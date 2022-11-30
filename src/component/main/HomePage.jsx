@@ -13,13 +13,12 @@ const Border = () => {
         <div className={cl.buttons}>
           <button>Редактировать профиль</button> <button>Еще</button>
         </div>
-        <h3>
-          О себе:
-          <p>Информация</p>
-        </h3>
+        <div className={cl.intro}>
+          <h3>Информация:</h3>
 
-        <h3>Город: Санкт-Петербург</h3>
-        <h3>Дата рождения</h3>
+          <h3>Город: Санкт-Петербург</h3>
+          <h3>Дата рождения</h3>
+        </div>
       </div>
     </div>
   );

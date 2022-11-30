@@ -2,26 +2,22 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 10px;
+  border: 2px solid silver;
+  border-radius: 15px;
+  padding: 0px;
 }
 
 .tagname {
-  /* border: 1px solid #5a9c9c; */
-  height: auto;
-  /* padding: 10px; */
-}
-.tagname h1 {
-  display: grid;
   border: 1px solid #5a9c9c;
+  height: auto;
+  padding: 15px;
   border-radius: 15px;
 }
 .chat {
-  border: 1px solid red;
-  height: auto;
+  border: 1px solid #5a9c9c;
+  border-radius: 15px;
+  padding: 15px;
 }
-.icon {
+/* .icon {
   padding: 10px;
-}
-
-.message {
-  padding: 10px;
-}
+} */

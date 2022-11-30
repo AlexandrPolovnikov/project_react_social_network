@@ -5,13 +5,13 @@ import Chat1 from "./chetList/Chat1";
 import Chat2 from "./chetList/Chat2";
 import Chat3 from "./chetList/Chat3";
 
-const Dialogs = () => {
+const Dialogs = (props) => {
   const { id } = useParams();
   return (
     <div className={sl.container}>
       <div className={sl.tagname}>
         <li>
-          <NavLink to="id" className={sl.icon}>
+          <NavLink to="1" className={sl.icon}>
             Дмитрий
           </NavLink>
         </li>
@@ -25,16 +25,9 @@ const Dialogs = () => {
             Татьяна
           </NavLink>
         </li>
-        <Outlet />
       </div>
       <div className={sl.chat}>
-        <Routes>
-          <Route path="dialogs" element={<Dialogs />}>
-            <Route path="dialogs/1" element={<Chat1 />} />
-            <Route path="dialogs/2" element={<Chat2 />} />
-            <Route path="dialogs/3" element={<Chat3 />} />
-          </Route>
-        </Routes>
+        <Outlet />
       </div>
     </div>
   );
