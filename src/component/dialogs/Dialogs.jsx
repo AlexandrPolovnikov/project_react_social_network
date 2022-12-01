@@ -10,22 +10,17 @@ const Dialogs = (props) => {
   return (
     <div className={sl.container}>
       <div className={sl.tagname}>
-        <li>
-          <NavLink to="1" className={sl.icon}>
-            Дмитрий
-          </NavLink>
+        <li className={sl.icon}>
+          <NavLink to="1">Дмитрий</NavLink>
         </li>
-        <li>
-          <NavLink to="2" className={sl.icon}>
-            Екатерина
-          </NavLink>
+        <li className={sl.icon}>
+          <NavLink to="2">Екатерина</NavLink>
         </li>
-        <li>
-          <NavLink to="3" className={sl.icon}>
-            Татьяна
-          </NavLink>
+        <li className={sl.icon}>
+          <NavLink to="3">Татьяна</NavLink>
         </li>
       </div>
+      <div className={sl.line}></div>
       <div className={sl.chat}>
         <Outlet />
       </div>
