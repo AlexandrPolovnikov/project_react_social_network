@@ -10,8 +10,9 @@ import SinglePage from "./component/myPosts/SinglePage";
 import Chat1 from "./component/dialogs/chetList/Chat1";
 import Chat2 from "./component/dialogs/chetList/Chat2";
 import Chat3 from "./component/dialogs/chetList/Chat3";
+import DialogItem from "./component/dialogs/chetList/DialogItem";
 
-function App() {
+function App(state) {
   return (
     <div className="container">
       <header className="icon-img">
@@ -28,6 +29,10 @@ function App() {
           <Route path="/">
             <Route index element={<HomePage />} />
             <Route path="dialogs" element={<Dialogs />}>
+              <Route
+                path="dialogs"
+                render={() => <Dialogs dialogs={state.dialogs} />}
+              />
               <Route path="1" element={<Chat1 />} />
               <Route path="2" element={<Chat2 />} />
               <Route path="3" element={<Chat3 />} />

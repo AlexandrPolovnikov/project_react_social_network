@@ -20,7 +20,9 @@
   border: 1px solid #5a9c9c;
   padding: 15px;
   border-radius: 15px;
+  margin: 5px;
 }
 .line {
-  border: 2px solid #5a9c9c;
+  border: 5px solid #5a9c9c;
+  border-radius: 50%;
 }

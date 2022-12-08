@@ -1,12 +1,11 @@
-import React from "react";
-import { NavLink, Outlet, Route, Routes, useParams } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import DialogItem from "./chetList/DialogItem";
 import sl from "./Dialogs.module.css";
-import Chat1 from "./chetList/Chat1";
-import Chat2 from "./chetList/Chat2";
-import Chat3 from "./chetList/Chat3";
 
-const Dialogs = (props) => {
-  const { id } = useParams();
+const Dialogs = (state) => {
+  console.log(state);
+
   return (
     <div className={sl.container}>
       <div className={sl.tagname}>
@@ -18,6 +17,9 @@ const Dialogs = (props) => {
         </li>
         <li className={sl.icon}>
           <NavLink to="3">Татьяна</NavLink>
+        </li>
+        <li className={sl.icon}>
+          <DialogItem />
         </li>
       </div>
       <div className={sl.line}></div>

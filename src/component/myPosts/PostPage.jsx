@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import PostFilter from "./../../posts/src/components/PostFilter";
 import BlogFilter from "./BlogFilter";
+import sl from "./MyPosts.module.css";
 
 const PostPage = () => {
   const [posts, setPosts] = useState([]);
@@ -40,7 +40,7 @@ const PostPage = () => {
         )
         .map((post) => (
           <Link key={post.id} to={`/posts/${post.id}`}>
-            <li>
+            <li className={sl.post}>
               <h3>{post.title}</h3>
             </li>
           </Link>
